@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documento PRINCIPAL da newsletter da Comissão de
+% Pedometria da Sociedade Brasileira de Ciência do Solo
+%
+% NÃO EDITE ESSE ARQUIVO!
+% 
+% Language: Latex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% PREÂMBULO
+\documentclass[a4paper]{report}
+
+% Língua e codificação
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% para boot
+\usepackage{amssymb,amsmath}
+
+% Nota: é preciso incluir o pacote amsmath antes do pacote PEDOMETRIAnews
+% porque o último redefine o ambiente de equações...
+\usepackage{PEDOMETRIAnews}
+\usepackage[round]{natbib}
+
+% Figuras
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% para Sweave
+\usepackage{listings}
+\usepackage{Sweave}
+
+% cor para verbatim
+\usepackage{color}
+\let\oldv\verbatim
+\let\oldendv\endverbatim
+\def\verbatim{\par\setbox0\vbox\bgroup\oldv}
+\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox[gray]{0.8}{\usebox0}\par}
+
+% para tcltk-update
+\usepackage{shortvrb}
+%\usepackage{chapterbib}
+
+\sloppy{}
+
+% links
+\usepackage[pdftex]{hyperref} % Deve ser o último pacote carregado
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+% DOCUMENTO
+\begin{document}
+ 
+% Edição da newsletter
+\volume{2}
+\volnumber{2}
+\date{Jun-Set 2013}
+\titlepage
+
+\begin{article}
+   \input{editorial}
+\end{article}
+
+\begin{article}
+   \input{artigo-marcos}
+\end{article}
+
+\begin{article}
+   \input{entrevista-michele}
+\end{article}
+
+\begin{article}
+   \input{artigo-waldir}
+\end{article}
+
+\begin{article}
+   \input{artigo-helena}
+\end{article}
+
+\begin{article}
+   \input{artigo-michele}
+\end{article}
+
+\begin{article}
+   \input{artigo-vinicius}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{artigo-alessandro}
+\end{article}
+
+\begin{article}
+   \input{publicacoes}
+\end{article}
+
+\begin{article}
+   \input{eventos}
+\end{article}
+
+\begin{article}
+   \input{instrucoes}
+\end{article}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: documento-principal.tex
+%%% End: 

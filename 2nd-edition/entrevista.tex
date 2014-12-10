@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modelo de ENTREVISTA da newsletter da Comissão
+% de Pedometria da Sociedade Brasileira de Ciência do Solo
+%
+% Esse modelo deve ser utilizado para a construção de ENTREVISTAS.
+% 
+% Recomendações gerais:
+% A edição desse documento deve ser feita utilizando um editor LaTeX
+% como o RStudio.
+% Comentários precedidos por '%' não precisam ser deletados pois não
+% são reconhecidos durante a copilação do documento.
+% Elementos como '\title{}' constituem comandos e não devem
+% ser alterados, exceto o conteúdo entre parênteses.
+% Ex.: '\title{Título do seu artigo}' = '\title{O que é Pedometria?}'
+%
+% Coloque o nome do entrevistado como nome do arquivo.
+% Ex. 'entrevista-alessandro.tex'.
+% O arquivo final deve ser enviado compactado junto das figuras.
+%
+% Language: Latex 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Entrevista
+\title{Entrevista}
+\subtitle{Nome do entrevistado}
+\maketitle
+
+
+
+% Aqui começa seu texto.
+Era uma vez...
+
+
+
+% Primeira pergunta
+\textbf{Qual é o seu nome?}
+
+
+
+% Aqui você coloca a resposta da primeira pergunta
+Era uma vez...
+
+
+
+% Com os comandos abaixo você insere uma figura.
+\begin{figure}[htbp]
+   \centering
+   % aqui vocÊ identifica o aquivo no formato PNG ou PDF:
+   \includegraphics[scale=0.8]{sua-figura-aqui.jpg}
+
+   % aqui você dá um título à figura:
+   \caption{Esse é o título da miha figura.}
+
+   % e aqui você define o rótulo da figura, que é usado para criar
+   % links no documento com a função '\ref{}':
+   \label{fig:rótulo-da-figura}
+\end{figure}
+
+
+
+% Aqui você continua seu texto.
+E para citar a figura use o comando \ref{fig:rótulo-da-figura}.
+
+
+
+% Segunda pergunta
+\textbf{Qual é o seu time favorito}
+
+
+
+% Aqui você coloca a resposta da primeira pergunta
+Era uma vez...
+
+
+
+% Se você quiser citar alguma referência bibliográfica use a função
+% '\cite{nome:ano}' e '\citep{nome:ano}'. Por exemplo:
+Os resultados de \cite{highlander:2003} são contraditórios.
+
+
+
+% Se a citação deve aparecer entre parêntese, então use o seguinte:
+Os resultados são contraditórios \citep{highlander:2003}.
+
+
+
+% Aqui termina o seu texto e começa a sua lista de referências
+% bibliográficas.
+\begin{footnotesize}
+\begin{thebibliography}{99}
+
+
+
+% primeiro item da sua lista:
+% a primeira linha descreve como a citação aparece no texto
+\bibitem[Highlander et~al. (2003) Highlander, Batman, Wolverine, Hulk]{highlander:2003}
+% essas três linhas definem como a citação aparece nas referências
+L.M. Highlander, M.G. Batman, A.S. Wolverine, S.P. Hulk (2003)
+\newblock A pedometria é muito legal.
+\newblock {\em Revista Pedometria} 24: 69-96.
+
+
+
+% copie e edite as linhas acima para adicionar mais referências
+
+
+\end{thebibliography}
+\end{footnotesize}
+% aqui termina sua lista de referências!
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: documento-principal.tex
+%%% End: 
