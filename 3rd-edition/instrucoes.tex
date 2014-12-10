@@ -1,0 +1,82 @@
+﻿\title{Instruções aos autores}
+\maketitle
+
+\subsection{Escopo e política}
+
+\pedometria é a \textit{Newsletter} (boletim técnico-científico) da Comissão de Pedometria da Sociedade Brasileira de Ciência do Solo (\href{http://www.sbcs.org.br/}{SBCS}). Assim sendo, dedica-se à publicação de trabalhos relacionados à aplicação de métodos matemáticos e estatísticos para o estudo da gênese e distribuição dos solos, o que abrange desde discussões conceituais até a aplicação prática de sensores e modelos. Especificamente, os seguintes tópicos costumam ser cobertos:
+
+\begin{itemize}
+ \item explicitação de conceitos usados em pedometria;
+ \item entrevista;
+ \item opinião sobre determinado tema relevante para a pedometria;
+ \item descrição de equipamentos e sensores remotos;
+ \item descrição de softwares e suas funcionalidades;
+ \item eventos técnico-científicos;
+ \item novas publicações científicas em pedometria.
+\end{itemize}
+
+Os artigos submetidos para publicação em \pedometria não devem ser formais como aqueles submetidos para revistas científicas tradicionais. Deve-se usar linguagem CLARA e INFORMAL, preferencialmente na VOZ ATIVA. Veja abaixo um exemplo:
+
+\begin{itemize}
+ \item \textbf{revista tradicional:} Foram usadas co-variáveis geomorfométricas para ajustar o modelo de regressão linear e predizer a distribuição espacial do pH do solo. Os resultados mostraram que o índice de umidade topográfica possui elevada capacidade preditiva. Isso reflete o processo erosivo do solo nas encostas e deposição de sedimentos ricos em cátions básicos nas áreas mais baixas do relevo.
+ \item \pedometria: Usamos variáveis que descrevem o terreno, como declividade, curvatura, elevação relativa, entre outros, para mapear o pH do solo. Essas variáveis, que costumamos chamar de co-variáveis ambientais (ou variáveis explicativas), são indicadores dos fatores de formação do solo. Assim, ao usar essas variáveis em um modelo estatístico, como um modelo de regressão linear (veja mais na \url{http://pt.wikipedia.org/wiki/Regress\%C3\%A3o\_linear}{Wikipédia}), tentamos traduzir em números a relação solo-paisagem. Em nosso caso, tínhamos como objetivo gerar um mapa do pH do solo para toda a área de estudo e entender como é a sua variação na paisagem (variação espacial). Depois de analisar os resultados dos modelos de regressão que ajustamos, chegamos à conclusão de que a melhor co-variável ambiental para predizer o pH do solo é o chamado índice de umidade topográfica (IUT). Esse índice é um indicador do potencial de acúmulo de água e deposição de sedimentos nas diferentes porções da paisagem. Assim, acreditamos que a deposição de sedimentos ricos em nutrientes nas partes mais baixas da paisagem esteja contribuindo para a elevação do pH. Enquanto isso, a erosão do solo nas partes mais altas e declivosas da paisagem resulta em diminuição do conteúdo de nutrientes e redução do pH.
+\end{itemize}
+
+Todos os conceitos pedométricos devem ser introduzidos com SENSIBILIDADE, tendo em mente que a maioria dos leitores os desconhecem e/ou não possuem base conceitual suficiente para compreende-los em uma única leitura. A estrutura do artigo deve ser concebida da mesma maneira que o fazemos para contar uma história à um amigo, a fim de cativar o leitor e envolvê-lo no emocionante universo da pedometria. Caso a comissão editorial entenda que a compreensão do texto exija aprofundado conhecimento prévio do leitor, os autores serão solicitados a torná-lo mais simples e amigável.
+
+Por meio do formato recomendado para a elaboração dos artigos, \pedometria coloca-se como veículo de divulgação e desmistificação da pedometria no Brasil. Trata-se de uma publicação com três edições anuais (Fev-Mai, Jun-Set, Out-Jan) que permite aos pesquisadores brasileiros divulgar suas pesquisas pedométricas e, sobretudo, conhecerem uns aos outros. Isso é importante porque, assim como a própria pedometria, a maioria dos pesquisadores brasileiros dessa área também são bastante jovens, muitos dos quais ainda estão desenvolvendo seus estudos de mestrado e doutorado. Por este motivo, \pedometria é distribuída gratuitamente via Internet, estando registrada sob a licença Creative Commons Atribuição-Compartilha Igual 3.0 Não Adaptada (\href{http://creativecommons.org/licenses/by-sa/2.0/}{CC-BY-SA}).
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{figuras/cc-by-sa}
+\caption{Atribuição-Compartilha Igual 3.0 Não Adaptada.}
+\end{figure}
+
+\subsection{Preparo dos artigos}
+
+Os artigos devem ser preparados em \href{http://pt.wikipedia.org/wiki/Latex}{\LaTeX}, utilizado amplamente para a produção de textos matemáticos e científicos devido à sua alta qualidade tipográfica. O \LaTeX é uma \href{http://pt.wikipedia.org/wiki/Linguagem\_de\_marca\%C3\%A7\%C3\%A3o}{linguagem de marcação}, ou seja, em que são utilizados comandos escritos para definir a formatação do documento, ao contrário dos editores tradicionais que oferecem abas e caixas de diálogo para clicar e definir parâmetros de formatação. Na prática, ao produzir um texto em \LaTeX, o autor não vê o produto final formatado na tela do computador, mas apenas o texto e os comandos de formatação. O objetivo é distanciar o autor o máximo possível da apresentação visual do artigo, ou seja, ao invés de trabalhar com idéias visuais, o autor é encorajado a trabalhar com conceitos lógicos independentes da apresentação final do artigo. Além disso, linguagens de marçação como o \LaTeX permitem agilizar a confecção do documento final (pdf) e reproduzir o conteúdo em outros formatos para apresentação em meio digital como o html.
+
+Apesar de diferente dos processadores de texto tradicionais, usar o \LaTeX é bastante fácil, sendo necessário apenas compreender a sua lógica de funcionamento. Para isso é bom dar uma olhada no \href{http://www.stdout.org/~winston/latex/}{Manual Rápido LaTeX} para conhecer alguns comandos básicos como:
+
+\begin{description}
+ \item negrito: \verb|\textbf{seu texto}| produz \textbf{seu texto};
+ \item itálico: \verb|\textit{seu texto}| produz \textit{seu texto}.
+\end{description}
+
+Todas as imagens, inclusive uma foto do(s) autor(es), devem ser no formato PNG ou JPG, enquanto desenhos e diagramas vetoriais devem estar no formato PDF.
+
+
+%TODO: Descrever como usar o LaTeX Lab.
+Recomendamos que os artigos sejam preparados usando o \href{http://docs.latexlab.org/}{LaTeX Lab}.
+
+Os artigos também podem ser preparados usando softwares como Bloco de Notas, WordPad, e Gedit. Entretanto, é mais aconselhado usar um software específico para a edição de documentos em \LaTeX, como o \href{http://kile.sourceforge.net/}{Kile} e o \href{http://miktex.org/}{MiKTeX}. Assim como o LaTeX Lab, estes softwares auxiliam a inserção dos comandos necessários para a formatação do texto sem a necessidade de memorizá-los.
+
+\subsection{Submissões}
+
+Qualquer pessoa pode submeter um artigo para publicação em \pedometria sem qualquer custo. Basta usar o modelo disponível (\href{https://sites.google.com/site/pedometria/file-cabinet}{clique aqui para acessar}). Quando o artigo estiver pronto, adicione o arquivo \LaTeX e os arquivos contendo as figuras à uma pasta comprimida e envie para a comissão editorial usando o endereço de e-mail \email{pedometria.news@gmail.com}.
+
+\subsection{Sobre nós}
+
+\subsubsection{Editor geral}
+
+Alessandro Samuel-Rosa\\
+\textit{Curso de Pós-Graduação em Agronomia-Ciência do Solo}\\
+\textit{Universidade Federal Rural do Rio de Janeiro}\\
+\email{alessandrosamuel@yahoo.com.br}
+
+\subsubsection{Editor da seção de entrevistas, eventos e novas publicações}
+Jean Michel Moura-Bueno\\
+\textit{Programa de Pós-Graduação em Ciência do Solo}\\
+\textit{Universidade Federal de Santa Maria}\\
+\email{bueno.jean1@gmail.com}
+
+\subsection{Observação}
+
+Iniciamos tratativas com a Sociedade Brasileira de Ciência do Solo para que toda a sua documentação e números publicados de \pedometria fiquem hospedados no \textit{website} \url{http://www.sbcs.org.br}. Infelizmente a Sociedade  Brasileira de Ciência do Solo não possui infraestrutura disponível para que isso seja possível. Enquanto isso, \pedometria fica temporariamente hospedada no \textit{website} \url{https://sites.google.com/site/pedometria/}, impedindo a obtenção de ISBN.
+
+\subsection{Agradecimento}
+
+Gostaríamos de agradecer o conselho editorial do \href{http://grass.osgeo.org/newsletter/}{GRASS News} do projeto GRASS pois, sem a sua contribuição com os arquivos *.tex e *.sty do GRASS News, \pedometria teria levado muito mais tempo para atingir o nível atual.
+%%% Local Variables:
+%%% mode: latex
+%%% End:

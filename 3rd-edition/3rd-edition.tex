@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Documento PRINCIPAL de Pedometria
+% Newsletter da Sociedade Brasileira de Ciência do Solo
+%
+% Número 3, Março de 2014
+% 
+% Language: Latex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PREÂMBULO
+\documentclass[a4paper]{report}
+
+% Língua e codificação
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+%\DeclareUnicodeCharacter{00A0}{~}
+
+% para boot
+\usepackage{amssymb,amsmath}
+
+% Nota: é preciso incluir o pacote amsmath antes do pacote PEDOMETRIAnews
+% porque o último redefine o ambiente de equações
+\usepackage{PEDOMETRIAnews}
+\usepackage[round]{natbib}
+
+% Figuras
+\usepackage{graphicx} % evitar problemas com tamanho das figuras
+\usepackage{wrapfig}
+
+% para Sweave
+\usepackage{listings}
+\usepackage{Sweave}
+
+% cor para verbatim (ambiente para código fonte)
+\usepackage{color}
+\let\oldv\verbatim
+\let\oldendv\endverbatim
+\def\verbatim{\par\setbox0\vbox\bgroup\oldv}
+\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox[gray]{0.8}{\usebox0}\par}
+
+% definição de pedometria
+\newcommand{\pedometria}{\textsc{PedometriA}}
+
+% para tcltk-update
+\usepackage{shortvrb}
+%\usepackage{chapterbib}
+
+\sloppy{}
+
+% links
+\usepackage{hyperref} % Deve ser o último pacote carregado
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+% DOCUMENTO
+\begin{document}
+ 
+% Edição da newsletter
+\volume{3}
+\volnumber{3}
+\date{Março de 2014}
+\titlepage
+
+\begin{article}
+   \input{editorial}
+\end{article}
+
+\begin{article}
+   \input{artigo-diego}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{entrevista-ricardo}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{question-igo}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{answer-marcos}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{answer-igo}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{artigo-alessandro}
+\end{article}
+
+\newpage
+
+\begin{article}
+   \input{eventos}
+\end{article}
+
+\begin{article}
+   \input{instrucoes}
+\end{article}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: 3rd-edition.tex
+%%% End: 
