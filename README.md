@@ -2,3 +2,4 @@ pedometria
 ==========
 
 Newsletter Pedometria
+
