@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Documento PRINCIPAL de Pedometria
+% Newsletter da Sociedade Brasileira de Ciência do Solo
+%
+% Número 4, Julho de 2014
+% 
+% Language: Latex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PREÂMBULO
+\documentclass[a4paper]{report}
+
+% Língua e codificação
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+%\DeclareUnicodeCharacter{00A0}{~}
+
+% para boot
+\usepackage{amssymb,amsmath}
+
+% Nota: é preciso incluir o pacote amsmath antes do pacote PEDOMETRIAnews
+% porque o último redefine o ambiente de equações
+\usepackage{PEDOMETRIAnews}
+% Citações numéricas, usando sobrescritos, conforme usado em 'Nature'
+% Referências para o pacote natbib: http://merkel.zoneo.net/Latex/natbib.php
+\usepackage[numbers, super, sort&compress]{natbib}
+
+% Figuras
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+
+% para Sweave
+\usepackage{listings}
+\usepackage{Sweave}
+
+% cor para verbatim (ambiente para código fonte)
+\usepackage{color}
+\let\oldv\verbatim
+\let\oldendv\endverbatim
+\def\verbatim{\par\setbox0\vbox\bgroup\oldv}
+\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox[gray]{0.8}{\usebox0}\par}
+
+% definição de \pedometria e \pedometriabf
+\newcommand{\pedometria}{\textsc{PedometriA}}
+\newcommand{\pedometriabf}{\textsc{\textbf{PedometriA}}}
+\newcommand{\pedoartemetria}{\textbf{\sffamily Pedo[Arte]Metria}}
+\newcommand{\pergunta}[1]{\vspace*{5mm}\noindent\pedometriabf{} - #1}
+\newcommand{\resposta}[2]{\vspace*{5mm}\noindent\textbf{#1} - #2}
+
+% definição de \PedoArteMetria
+\newcommand{\PedoArteMetria}[4]{
+  \noindent
+  \begin{minipage}[t][0.95\textheight][t]{\textwidth}
+    \textbf{\sffamily\Huge Pedo[Arte]Metria}\\
+    \vspace*{0.5cm}\\
+    \begin{figure}[H]
+      \includegraphics[width=\textwidth]{#1}
+    \end{figure}
+    \vspace*{0.5cm}
+    \raggedleft
+    \begin{minipage}{0.8\textwidth}
+      \raggedleft
+      \LARGE
+      \noindent\textbf{#2}\\
+      \vspace*{0.5cm}
+      \noindent{#3}
+      \vspace*{0.5cm}\\
+      \normalsize{\noindent\textit{Foto enviada por: #4}}
+    \end{minipage}
+    \vfill
+    \raggedright
+    \begin{minipage}{0.5\textwidth}
+      \rule{\textwidth}{1mm}
+      \normalsize
+      Se você quer compartilhar conosco uma imagem \textbf{\sffamily Pedo[Arte]Métrica} de sua autoria, envie-a para \href{mailto:pedometria.news@gmail.com}{pedometria.news@gmail.com} com resolução de 300 dpi ou com no mínimo 5Mb, preferencialmente em formato PNG.
+    \end{minipage}
+  \end{minipage}
+  }
+
+% doi
+\newcommand*{\doi}[1]{[\href{http://dx.doi.org/\detokenize{#1}}{link}]}
+  
+% para tcltk-update
+\usepackage{shortvrb}
+%\usepackage{chapterbib}
+
+\sloppy{}
+
+% links
+\usepackage{hyperref} % Deve ser o último pacote carregado
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+% DOCUMENTO
+\begin{document}
+ 
+% Edição da newsletter
+\volume{4}
+\volnumber{4}
+\date{Julho de 2014}
+\titlepage
+\begin{article}
+   \input{editorial}
+\end{article}
+\newpage
+\PedoArteMetria{figuras/pedoartemetria}{A cor do solo}{Para um olhar desavisado, não se trata de maquiagem. São porta amostras para avaliação da espectroscopia de refletância difusa, uma das técnicas mais indicadas para quantificar os óxidos de ferro (hematita e gohetita) como alternativa a técnica convencional de difração de Raio-X.}{Diego Silva Siqueira -- Grupo de Pesquisa CSME da UNESP Campus de Jaboticabal}
+\begin{article}
+   \input{artigo-dematte-marilusa}
+\end{article}
+\newpage
+\begin{article}
+   \input{artigo-yuri}
+\end{article}
+\newpage
+\begin{article}
+   \input{entrevista}
+\end{article}
+\newpage
+\begin{article}
+   \input{artigo-otavio-camargo}
+\end{article}
+ \newpage
+\begin{article}
+   \input{artigo-vidal-barron}
+\end{article}
+\newpage
+\begin{article}
+   \input{eventos}
+\end{article}
+\newpage
+\begin{article}
+   \input{comission}
+\end{article}
+\newpage
+\begin{article}
+   \input{instrucoes}
+\end{article}
+\end{document}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: 4rd-edition.tex
+%%% End: 
