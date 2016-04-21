@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modelo de ARTIGO DESCRITIVO DE NOVAS PUBLICAÇÕES da
+% newsletter da Comissão de Pedometria da Sociedade Brasileira de
+% Ciência do Solo
+%
+% Esse modelo deve ser utilizado para a construção de ARTIGO
+% DESCRITIVO DE NOVAS PUBLICAÇÕES.
+% 
+% Recomendações gerais:
+% A edição desse documento deve ser feita utilizando um editor LaTeX
+% específico ou o RStudio.
+% Comentários precedidos por '%' não precisam ser deletados pois não
+% são reconhecidos durante a copilação do documento.
+% Elementos como '\title{}' constituem comandos e não devem
+% ser alterados, exceto o conteúdo entre parênteses.
+% Ex.: '\title{Título do seu artigo}' = '\title{O que é Pedometria?}'
+% 
+% Language: Latex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Novas publicações em pedometria}
+\maketitle
+
+% Se você tiver algum texto de apresentação, este é o espaço para inserí-lo!
+
+% Primeira publicação
+\section{O título da publicação}
+
+\subsection{Citação}
+G. Xadrez (2013) A cor do Gato Xadrez. {\em Revista Científica do Xadrez} 04:01-09. 
+
+\subsection{Resumo}
+Era uma vez um gato xadrez. Quer que eu conte outra vez?
+
+% Repita a estrutura acima para inserir novos títulos.
+
+% Com os comandos abaixo você insere uma figura.
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.8]{sua-figura-aqui.jpg} % aqui você identifica o aquivo no formato PNG ou PDF
+   \caption{Esse é o título da miha figura.} % aqui você dá um título à figura
+   \label{fig:rótulo-da-figura} % aqui você define o rótulo da figura, que é usado para criar links no documento com a função '\ref{}'
+\end{figure}
+
+% E para citar a figura use o comando \ref{fig:rótulo-da-figura}.
+
+% Se você quiser citar alguma referência bibliográfica use a função
+% '\cite{nome:ano}' e '\citep{nome:ano}'. Por exemplo:
+Os resultados de \cite{highlander:2003} são contraditórios.
+
+
+
+% Se a citação deve aparecer entre parêntese, então use o seguinte:
+Os resultados são contraditórios \citep{highlander:2003}.
+
+
+
+
+% Bibliografia
+\begin{footnotesize}
+\begin{thebibliography}{99}
+
+
+
+% Lista das publicações descritas em ordem alfabética:
+ 
+\bibitem[Herborg et~al. (2003) Herborg, Bentley, Clare, Rushton]{herborg:2003} 
+L.M. Herborg, M.G. Bentley, A.S. Clare, S.P. Rushton (2003)
+\newblock The spread of the Chinese mitten crab (Eriocheir sinensis) in
+Europe; the predictive value of an historical data set.
+\newblock {\em Hydrobiologia} 503: 21-28.
+
+\bibitem[Lurz et~al. (2001) Lurz, Rushton, Wauters, Bertolino, Currado,
+Mazzoglio, Shirley]{lurz:2001} P.W.W. Lurz, S.P. Rushton, L.A. Wauters, I. Currado,
+P. Mazzoglio, M.D.F. Shirley (2001)
+\newblock Predicting grey squirrel expansion in North Italy: a spatially
+explicit modelling approach.
+\newblock {\em Landscape Ecology} 16: 407-420.
+
+
+
+\end{thebibliography}
+\end{footnotesize}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: documento-principal.tex
+%%% End: 

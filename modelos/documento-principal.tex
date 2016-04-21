@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documento PRINCIPAL da newsletter da Comissão de
+% Pedometria da Sociedade Brasileira de Ciência do Solo
+%
+% NÃO EDITE ESSE ARQUIVO!
+% 
+% Language: Latex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% PREÂMBULO
+\documentclass[a4paper]{report}
+
+% Língua e codificação
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% para boot
+\usepackage{amssymb,amsmath}
+
+% Nota: é preciso incluir o pacote amsmath antes do pacote GRASSnews
+% porque o último redefine o ambiente de equações...
+\usepackage{GRASSnews}
+\usepackage[round]{natbib}
+
+% Figuras
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% para Sweave
+\usepackage{listings}
+
+% para tcltk-update
+\usepackage{shortvrb}
+%\usepackage{chapterbib}
+
+\sloppy{}
+
+% links
+\usepackage[pdftex]{hyperref} % Deve ser o último pacote carregado
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+% DOCUMENTO
+\begin{document}
+ 
+% Edição da newsletter
+\volume{1}
+\volnumber{1}
+\date{June 2004}
+\titlepage
+
+
+
+% Entrevista
+\begin{article}
+   \input{entrevista}
+\end{article}
+
+
+
+% Artigos em geral
+\begin{article}
+   \input{artigo-modelo}
+\end{article}
+
+
+
+% Artigo sobre novas publicações
+\begin{article}
+   \input{publicacoes}
+\end{article}
+
+
+
+% Artigo de eventos
+\begin{article}
+   \input{eventos}
+\end{article}
+
+
+
+% Artigo de instrução aos autores
+\begin{article}
+   \input{instrucoes}
+\end{article}
+
+
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: documento-principal.tex
+%%% End: 
